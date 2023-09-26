@@ -33,6 +33,9 @@
 
 #game-section {
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #hero-title {
@@ -85,6 +88,12 @@
     background-image: url(/assets/images/scissors.png);
     background-size: auto;
     background-position: center;
+}
+
+#score-section {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
 }
 
 #footer {
