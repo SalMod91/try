@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 #header {
     display: flex;
     justify-content: center;
@@ -171,15 +176,6 @@
     width: 600px;
 }
 
-#footer {
-    display: flex;
-    height: 100px;
-    background-color: black;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
 #rules-container, #about-section {
     display: flex;
     margin: 0 auto;
@@ -189,4 +185,44 @@
 
 #rules-container li {
     list-style: none;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 100px;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-left img {
+    max-width: 100px;
+}
+
+.footer-right a {
+    text-decoration: none;
+    color: white;
+    font-size: 280%;
+}
+
+.footer-right a:hover {
+    color: #a0d8e0;
+}
+
+.logo {
+    max-width: 100px;
+    position: absolute;
+    left: 200px;
+    top: 0px;
 }
