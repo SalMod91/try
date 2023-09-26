@@ -17,6 +17,8 @@ Die Live-Version finden Sie [HERE](https://salmod91.github.io/try).
   - [Aboutseite](#aboutseite)
   - [Footer](#footer)
 - [Testing](#testing)
+  - [Validator Testing](#validator-testing)
+  - [Lighthouse](#lighthouse)
 
 ## UX
 
@@ -62,3 +64,5 @@ CSS Validator:
 
 JS Validator:
 ![JS Validator](/assets/images/readme-images/js-validator.PNG)
+
+### Lighthouse:
