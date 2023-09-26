@@ -19,6 +19,13 @@ Die Live-Version finden Sie [HERE](https://salmod91.github.io/try).
 - [Testing](#testing)
   - [Validator Testing](#validator-testing)
   - [Lighthouse](#lighthouse)
+- [Wireframes](#wire-frames)
+- [Verwendete Technologien](#verwendete-technologien)
+  - [Programmiersprachen](#programmiersprachen)
+  - [Frameworks, Bibliotheken, Programme](#frameworks-bibliotheken-programme)
+- [Bereitstellung](#bereitstellung)
+- [Credits](#credits)
+  - [Media](#media)
 
 ## UX
 
@@ -66,3 +73,36 @@ JS Validator:
 ![JS Validator](/assets/images/readme-images/js-validator.PNG)
 
 ### Lighthouse:
+![Lighthose](/assets/images/readme-images/lighthouse.PNG)
+
+### Wireframe
+![Wireframe](/assets/images/readme-images/wireframe.PNG)
+
+### Verwendete Technologien
+
+## Programmiersprachen:
+- HTML5
+- CSS3
+- JSE6
+
+## Frameworks, Bibliotheken, Programme:
+- Gitpod
+- GitHub
+- LucidChart
+- Font Awesome
+
+### Bereitstellung
+Die Website wurde auf GitHub Pages bereitgestellt. Die Schritte zur Bereitstellung lauten wie folgt:
+
+1. Navigieren Sie im GitHub-Repository zum Tab "Einstellungen" (Settings).
+2. Im Abschnitt "Quelle" (Source) wählen Sie aus dem Dropdown-Menü den "Master-Zweig" aus.
+3. Sobald der Master-Zweig ausgewählt wurde, wird die Seite automatisch neu geladen und eine detaillierte Anzeige informiert über die erfolgreiche Bereitstellung.
+4. Den Live-Link finden Sie [HIER](https://salmod91.github.io/try).
+
+### Credits
+Alles wurde von mir erstellt.
+
+## Media:
+[Schere, Stein, Papier Bilder](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fvector%2Fcolorful-hand-icon-set-gm1395632555-450673708&psig=AOvVaw3lqODQscsaSDHCcbMPH0zj&ust=1695808508074000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKiq55SByIEDFQAAAAAdAAAAABAE)
+
+[Schere, Stein, Papier Logo](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F719450109227680964%2F&psig=AOvVaw0g45MSZ_EwYkBMEPY72KhN&ust=1695808624768000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKCJvcuByIEDFQAAAAAdAAAAABAD)
