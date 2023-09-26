@@ -28,7 +28,9 @@
 }
 
 #menu-section {
-    display: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #game-section {
