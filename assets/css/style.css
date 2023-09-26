@@ -71,6 +71,7 @@
     background-image: url(/assets/images/rock.png);
     background-size: auto;
     background-position: center;
+    cursor: pointer;
 }
 
 #paper-button {
@@ -80,6 +81,7 @@
     background-image: url(/assets/images/paper.png);
     background-size: auto;
     background-position: center;
+    cursor: pointer;
 }
 
 #scissors-button {
@@ -89,6 +91,16 @@
     background-image: url(/assets/images/scissors.png);
     background-size: auto;
     background-position: center;
+    cursor: pointer;
+}
+
+#rock-button, #paper-button, #scissors-button {
+    box-shadow: 0 2px 4px darkslategray;
+}
+
+#rock-button:active, #paper-button:active, #scissors-button:active {
+    box-shadow: 0 0 2px darkslategray;
+    transform: translateY(2px);
 }
 
 #information-section {
