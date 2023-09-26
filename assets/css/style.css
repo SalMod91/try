@@ -31,6 +31,10 @@
     display: auto;
 }
 
+#game-section {
+    display: none;
+}
+
 #hero-title {
     display: flex;
     flex-direction: column;
@@ -47,6 +51,40 @@
 #start-game {
     height: 50px;
     width: 100px;
+}
+
+#button-section {
+    display: flex;
+    margin: 0 auto;
+    width: 500px;
+    justify-content: space-between;
+}
+
+#rock-button {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    background-image: url(/assets/images/rock.png);
+    background-size: auto;
+    background-position: center;
+}
+
+#paper-button {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    background-image: url(/assets/images/paper.png);
+    background-size: auto;
+    background-position: center;
+}
+
+#scissors-button {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    background-image: url(/assets/images/scissors.png);
+    background-size: auto;
+    background-position: center;
 }
 
 #footer {
