@@ -26,3 +26,25 @@
 #active-page {
     border-bottom: 1px solid white;
 }
+
+#menu-section {
+    display: auto;
+}
+
+#hero-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+    align-items: center;
+}
+
+#start-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+#start-game {
+    height: 50px;
+    width: 100px;
+}
