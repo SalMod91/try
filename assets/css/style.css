@@ -48,3 +48,12 @@
     height: 50px;
     width: 100px;
 }
+
+#footer {
+    display: flex;
+    height: 100px;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
