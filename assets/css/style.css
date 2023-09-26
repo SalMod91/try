@@ -1,0 +1,28 @@
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: black;
+    color: white;
+}
+
+#ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+#ul li {
+    padding: 3px;
+    list-style: none;
+}
+
+#ul a {
+    text-decoration: none;
+    color: white;
+}
+
+#active-page {
+    border-bottom: 1px solid white;
+}
