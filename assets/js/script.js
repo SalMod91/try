@@ -7,7 +7,6 @@ const menuSection = document.getElementById("menu-section");
 const gameSection = document.getElementById("game-section");
 const informationSection = document.getElementById("information-section");
 const imageSection = document.getElementById("image-section");
-const textSection = document.getElementById("text-section");
 const gameResultSection = document.getElementById("game-result");
 let winScore = document.getElementById("win-score");
 let drawScore = document.getElementById("draw-score");
