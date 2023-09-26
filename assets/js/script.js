@@ -6,6 +6,9 @@ document.addEventListener ("DOMContentLoaded", function() {
 const menuSection = document.getElementById("menu-section");
 const gameSection = document.getElementById("game-section");
 const informationSection = document.getElementById("information-section");
+const imageSection = document.getElementById("image-section");
+const textSection = document.getElementById("text-section");
+const gameResultSection = document.getElementById("game-result");
 let winScore = document.getElementById("win-score");
 let drawScore = document.getElementById("draw-score");
 let loseScore = document.getElementById("lose-score");
@@ -81,7 +84,7 @@ function displayImage(choice) {
         imageDisplayed.alt = imageListItem.alt;
         imageDisplayed.classList.add(imageListItem.class);
 
-        informationSection.appendChild(imageDisplayed); // Assuming you want to append it to the information section
+        imageSection.appendChild(imageDisplayed);
     }
 }
 
@@ -107,6 +110,7 @@ function handleChoice(event) {
     displayImage(computerChoice);
 
     let result;
+    let gameResultMessage;
     
     if (playerChoiceValue === computerChoice) {
         result = "draw";
@@ -127,6 +131,23 @@ function handleChoice(event) {
     } else {
         playerLoseScore++;
     }
+
+    if (playerChoiceValue === computerChoice) {
+        result = "draw";
+        gameResultMessage = "It's a draw!";
+    } else if (
+        (playerChoiceValue === "rock" && computerChoice === "scissors") ||
+        (playerChoiceValue === "paper" && computerChoice === "rock") ||
+        (playerChoiceValue === "scissors" && computerChoice === "paper")
+    ) {
+        result = "win";
+        gameResultMessage = "You win!";
+    } else {
+        result = "lose";
+        gameResultMessage = "You lose!";
+    }
+
+    gameResultSection.textContent = gameResultMessage;
 
     update_score();
 }
