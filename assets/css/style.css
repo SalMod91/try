@@ -14,8 +14,9 @@
 }
 
 #ul li {
-    padding: 3px;
+    padding: 0px 100px;
     list-style: none;
+    font-size: 150%;
 }
 
 #ul a {
@@ -66,13 +67,20 @@
     margin: 50px 0;
 }
 
+.button-image {
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 4px;
+    right: 8px;
+    pointer-events: none;
+}
+
 #rock-button {
     width: 115px;
     height: 115px;
     border-radius: 50%;
-    background-image: url(/assets/images/rock.png);
-    background-size: auto;
-    background-position: center;
     cursor: pointer;
 }
 
@@ -80,9 +88,6 @@
     width: 115px;
     height: 115px;
     border-radius: 50%;
-    background-image: url(/assets/images/paper.png);
-    background-size: auto;
-    background-position: center;
     cursor: pointer;
 }
 
@@ -90,9 +95,6 @@
     width: 115px;
     height: 115px;
     border-radius: 50%;
-    background-image: url(/assets/images/scissors.png);
-    background-size: auto;
-    background-position: center;
     cursor: pointer;
 }
 
