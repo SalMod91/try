@@ -61,6 +61,7 @@
     margin: 0 auto;
     width: 500px;
     justify-content: space-between;
+    margin: 50px 0;
 }
 
 #rock-button {
@@ -88,6 +89,24 @@
     background-image: url(/assets/images/scissors.png);
     background-size: auto;
     background-position: center;
+}
+
+#information-section {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 300px;
+    width: 600px;
+    justify-content: center;
+    border: 4px solid black;
+    margin: 50px 0;
+}
+
+.image {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    padding: 0 50px;
 }
 
 #score-section {

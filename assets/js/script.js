@@ -1,6 +1,7 @@
 // Interchangable sections
 const menuSection = document.getElementById("menu-section");
 const gameSection = document.getElementById("game-section");
+const informationSection = document.getElementById("information-section")
 let winScore = document.getElementById("win-score")
 let drawScore = document.getElementById("draw-score")
 let loseScore = document.getElementById("lose-score")
@@ -24,6 +25,27 @@ rockButton.addEventListener("click", handleChoice)
 paperButton.addEventListener("click", handleChoice)
 scissorsButton.addEventListener("click", handleChoice)
 
+const imageList = [
+    {
+        choice: "rock",
+        source: "assets/images/rock.png",
+        alt: "Image depicting a rock sign",
+        class: "image"
+    },
+    {
+        choice: "paper",
+        source: "assets/images/paper.png",
+        alt: "Image depicting a paper sign",
+        class: "image"
+    },
+    {
+        choice: "scissors",
+        source: "assets/images/scissors.png",
+        alt: "Image depicting a scissors sign",
+        class: "image"
+    },
+]
+
 // Functions
 function startGame(event) {
     // Closes the menu and opens the game section
@@ -41,7 +63,28 @@ function update_score() {
     loseScore.textContent = playerLoseScore;
 }
 
+function clearImage() {
+    const imageElements = informationSection.querySelectorAll('img');
+    imageElements.forEach((img) => {
+        img.remove();
+    });
+}
+
+function displayImage(choice) {
+    // Remove the 'let' keyword here
+    let imageListItem = imageList.find((item) => item.choice === choice);
+    if (imageListItem) {
+        let imageDisplayed = document.createElement("img");
+        imageDisplayed.src = imageListItem.source;
+        imageDisplayed.alt = imageListItem.alt;
+        imageDisplayed.classList.add(imageListItem.class);
+
+        informationSection.appendChild(imageDisplayed); // Assuming you want to append it to the information section
+    }
+}
+
 function handleChoice(event) {
+    clearImage();
     let playerChoiceValue = event.target.value;
     let computerChoiceValue = Math.floor(Math.random() * 3) + 1;
     
@@ -57,6 +100,9 @@ function handleChoice(event) {
             computerChoice = "scissors"
             break;
     }
+
+    displayImage(playerChoiceValue);
+    displayImage(computerChoice);
 
     let result;
     
