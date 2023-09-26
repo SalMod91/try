@@ -24,8 +24,16 @@
     color: white;
 }
 
+#ul a:hover {
+    color: #a0d8e0;
+}
+
 #active-page {
     border-bottom: 1px solid white;
+}
+
+#active-page:hover {
+    border-bottom: 1px solid #a0d8e0;
 }
 
 #menu-section {
@@ -47,6 +55,7 @@
     justify-content: center;
     height: 600px;
     align-items: center;
+    font-size: 170%;
 }
 
 #start-button-container {
@@ -55,8 +64,20 @@
 }
 
 #start-game {
-    height: 50px;
-    width: 100px;
+    height: 60px;
+    width: 120px;
+    font-size: 150%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px darkslategray;
+}
+
+#start-game:hover {
+    background-color: hsl(0, 0%, 85%);
+}
+
+#start-game:active {
+    box-shadow: 0 0 2px darkslategray;
+    transform: translateY(2px);
 }
 
 #button-section {
@@ -138,4 +159,15 @@
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+#rules-container, #about-section {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    text-align: center;
+}
+
+#rules-container li {
+    list-style: none;
 }
