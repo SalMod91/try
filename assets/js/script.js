@@ -1,29 +1,31 @@
+// Waits for the DOM to be finished loading
+document.addEventListener ("DOMContentLoaded", function() {
+});
+
 // Interchangable sections
 const menuSection = document.getElementById("menu-section");
 const gameSection = document.getElementById("game-section");
-const informationSection = document.getElementById("information-section")
-let winScore = document.getElementById("win-score")
-let drawScore = document.getElementById("draw-score")
-let loseScore = document.getElementById("lose-score")
+const informationSection = document.getElementById("information-section");
+let winScore = document.getElementById("win-score");
+let drawScore = document.getElementById("draw-score");
+let loseScore = document.getElementById("lose-score");
 
 // Game Stats
-let playerChoice;
-let computerChoice;
 let playerWinScore = 0;
 let playerDrawScore = 0;
 let playerLoseScore = 0;
 
 // Buttons
-const startGameButton = document.getElementById("start-game")
-const rockButton = document.getElementById("rock-button")
-const paperButton = document.getElementById("paper-button")
-const scissorsButton = document.getElementById("scissors-button")
+const startGameButton = document.getElementById("start-game");
+const rockButton = document.getElementById("rock-button");
+const paperButton = document.getElementById("paper-button");
+const scissorsButton = document.getElementById("scissors-button");
 
 // Event Listeners
 startGameButton.addEventListener("click", startGame);
-rockButton.addEventListener("click", handleChoice)
-paperButton.addEventListener("click", handleChoice)
-scissorsButton.addEventListener("click", handleChoice)
+rockButton.addEventListener("click", handleChoice);
+paperButton.addEventListener("click", handleChoice);
+scissorsButton.addEventListener("click", handleChoice);
 
 const imageList = [
     {
@@ -44,7 +46,7 @@ const imageList = [
         alt: "Image depicting a scissors sign",
         class: "image"
     },
-]
+];
 
 // Functions
 function startGame(event) {
@@ -97,7 +99,7 @@ function handleChoice(event) {
             computerChoice = "paper";
             break;
         case 3:
-            computerChoice = "scissors"
+            computerChoice = "scissors";
             break;
     }
 
