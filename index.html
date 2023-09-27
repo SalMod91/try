@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +11,11 @@
         <link rel="icon" href="assets/images/favicon.ico">
         <title>R/P/S</title>
     </head>
+
     <body>
+
         <header id="header">
+            <!-- Navigation links with hover functions and active page through underline -->
             <nav>
                 <a href="index.html">
                     <img src="assets/images/logo.png" alt="Logo" class="logo">
@@ -29,19 +33,26 @@
                 </ul>
             </nav>
         </header>
+
         <main>
+
+            <!-- Landing page menu that will be swapped with the game section -->
             <section id="menu-section">
                 <div id="hero-title">
                     <h1>WELCOME TO</h1>
                     <img src="assets/images/rps.jpg" alt="Picture of rock, paper and scissor hand signs">
                 </div>
+                <!-- Hides the menu section and opens the game section -->
                 <div id="start-button-container">
                     <button id="start-game">START GAME</button>
                 </div>
             </section>
-            <section id="game-section">
-                <div id="button-section">
 
+            <!-- Game section that will be visible after game start -->
+            <section id="game-section">
+
+                <!-- Buttons with event listener that trigger the main algorithm function -->
+                <div id="button-section">
                     <button id="rock-button" value="rock">
                         <img src="assets/images/rock.png" alt="Image depicting a hand sign of a rock" class="button-image">
                     </button>
@@ -53,38 +64,48 @@
                     <button id="scissors-button" value="scissors">
                         <img src="assets/images/scissors.png" alt="Image depicting a hand sign of scissors" class="button-image">
                     </button>
-
                 </div>
+
+                <!-- Information section that displays the player the status of the game through images and text -->
                 <div id="information-section">
                     <div id="image-section"></div>
                     <div id="text-section">
                         <p id="game-result"></p>
                     </div>
                 </div>
+
+                <!-- The score section in wich the score gets updated after every round -->
                 <div id="score-section">
                     <h2>Win: <span id="win-score">0</span></h2>
                     <h2>Draw: <span id="draw-score">0</span></h2>
                     <h2>Lose: <span id="lose-score">0</span></h2>
                 </div>
+
             </section>
         </main>
+
+        <!-- Footer depicting the logo, author and social link/links -->
         <footer id="footer" class="footer-flex">
+
             <div class="footer-left">
                 <a href="index.html">
                     <img src="assets/images/logo.png" alt="Logo" class="logo">
                 </a>
             </div>
+
             <div class="footer-center">
                 <p class="footer-text">Diese Webseite wurde von mir erstellt.</p>
             </div>
+
             <div class="footer-right">
                 <a href="https://github.com/SalMod91" target="_blank" aria-label="Visit my GitHub Page">
                     <i class="fab fa-github"></i>
                 </a>
             </div>
+            
         </footer>
         
-        <!-- Script -->
+        <!-- Scripts -->
         <script src="https://kit.fontawesome.com/aeb00995c9.js" crossorigin="anonymous"></script>
         <script src="assets/js/script.js"></script>
     </body>

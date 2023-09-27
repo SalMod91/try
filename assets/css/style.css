@@ -3,6 +3,9 @@ body {
     padding: 0;
 }
 
+/* Landing page CSS rules */
+
+/* Header Section */
 #header {
     display: flex;
     justify-content: center;
@@ -41,12 +44,14 @@ body {
     border-bottom: 1px solid #a0d8e0;
 }
 
+/* Menu section */
 #menu-section {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
+/* Game Section */
 #game-section {
     display: none;
     flex-direction: column;
@@ -85,6 +90,7 @@ body {
     transform: translateY(2px);
 }
 
+/* The R/P/S buttons that trigger the EL */
 #button-section {
     display: flex;
     margin: 0 auto;
@@ -133,6 +139,7 @@ body {
     transform: translateY(2px);
 }
 
+/* Information section used as a container for images and status messages */
 #information-section {
     display: flex;
     align-items: center;
@@ -151,6 +158,7 @@ body {
     justify-content: center;
 }
 
+/* Container for the status message */
 #text-section {
     flex: 1;
     display: flex;
@@ -170,6 +178,7 @@ body {
     padding: 0 50px;
 }
 
+/* Section container for scores */
 #score-section {
     display: flex;
     justify-content: space-between;
@@ -187,6 +196,7 @@ body {
     list-style: none;
 }
 
+/* Footer */
 #footer {
     display: flex;
     justify-content: space-between;
@@ -199,6 +209,7 @@ body {
     width: 100%;
 }
 
+/* Divides the footer container into 3 equal parts in a row */
 .footer-left,
 .footer-center,
 .footer-right {
@@ -220,6 +231,7 @@ body {
     color: #a0d8e0;
 }
 
+/* Logo */
 .logo {
     max-width: 100px;
     position: absolute;

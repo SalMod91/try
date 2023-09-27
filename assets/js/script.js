@@ -61,12 +61,18 @@ function startGame(event) {
     playerLoseScore = 0;
 }
 
+/**
+ * This function updates scores depending on the outcome
+ */
 function update_score() {
     winScore.textContent = playerWinScore;
     drawScore.textContent = playerDrawScore;
     loseScore.textContent = playerLoseScore;
 }
 
+/**
+ * This function clears the images in the information section
+ */
 function clearImage() {
     const imageElements = informationSection.querySelectorAll('img');
     imageElements.forEach((img) => {
@@ -74,6 +80,10 @@ function clearImage() {
     });
 }
 
+/**
+ * Displays an image by iterating through the images list and choosing based on the player and computer choice
+ * @param {*} choice 
+ */
 function displayImage(choice) {
     // Remove the 'let' keyword here
     let imageListItem = imageList.find((item) => item.choice === choice);
@@ -87,6 +97,16 @@ function displayImage(choice) {
     }
 }
 
+/**
+ * Handles the logic behind the game
+ * Clears images from the information section
+ * Rolls a random number from 1 to 3, a switch case assigns the computer choice
+ * Displays images depending on the player and computer choice
+ * Displays a status message in the information section informing the player about the outcome
+ * Compares the player and pc choices and depicts an outcome
+ * Updates the score depending on the outcome
+ * @param {click} event 
+ */
 function handleChoice(event) {
     clearImage();
     let playerChoiceValue = event.target.value;
