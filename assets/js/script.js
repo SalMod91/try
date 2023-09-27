@@ -29,6 +29,7 @@ rockButton.addEventListener("click", handleChoice);
 paperButton.addEventListener("click", handleChoice);
 scissorsButton.addEventListener("click", handleChoice);
 
+// List of images depicting the possible choices
 const imageList = [
     {
         choice: "rock",
